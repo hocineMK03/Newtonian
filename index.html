@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #fceeee;
+    }
+
+    .info {
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 1.2rem;
+        color: #333;
+    }
+
+    canvas#myCanvas {
+        width: 90vw;
+        max-width: 640px;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        border: 2px solid #9c7a7a;
+        background: #fcc2c2;
+        outline: none;
+    }
+</style>
+
+    <title>Newtonian</title>
+</head>
+<body>
+    <div class="info">
+        <div class="info-speed"><p>speed is </p>
+            <span id="speed">0</span>
+        </div>
+    </div>
+    <canvas id="myCanvas" tabindex=0 width="640" height="640"></canvas>
+
+       <script src="./index.js"></script>
+    
+</body>
+</html>
